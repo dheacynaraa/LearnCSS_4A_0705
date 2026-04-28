@@ -10,17 +10,12 @@
     padding: 0;  
 }
 
-body {
-    font-family: "Segoe UI";
-    background-color: #0d1117;
-    color: #c9d1c9;
-    line-height: 1.6;
-}
-
+/* ==== Accent color ==== */
 .accent {
     color: #3a7ce0;
 }
 
+/* ==== Header Styles ==== */
 header {
     background-color: rgba(26, 28, 32, 0.9);
     padding: 1rem 4.5rem;
@@ -51,6 +46,14 @@ nav a:hover {
     color: #575757;
 }
 
+/* ==== Body Styles ==== */
+body {
+    font-family: "Segoe UI";
+    background-color: #0d1117;
+    color: #c9d1c9;
+    line-height: 1.6;
+}
+
 #about {
     background-color: #0d1117;
     padding: 2rem 4.5rem;
@@ -69,24 +72,26 @@ nav a:hover {
     font-size: 1.5rem;
     font-weight: 800;
     color: #ffffff;
-    margin-bottom: 0rem;
-    line-height: 1.1;
+    margin-bottom: 0.5rem;
 }
 
 .hero-kiri h2 {
     font-size: 2.5rem;
     font-family: "comucan";
+    line-height: 1.3;
 }
 
 .hero-kiri .role {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
 }
 
 .hero-kiri .desc {
     font-size: 1rem;
     color: #8b949e;
-    font-weight: 900;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
 }
 
 .hero-kanan img {
@@ -98,3 +103,94 @@ nav a:hover {
     transition: border-color 0.3s;
 }
 
+.hero-tombol {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-abt {        
+    padding: 0.75rem 1.8rem;
+    background-color: #3a7ce0;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+.btn-abt:hover {
+    background-color: #2a5cb0;
+    transform: translateY(-2px);
+}
+
+/* ==== Section Label & Description ==== */
+.section-label {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #3a7ce0;
+    margin-bottom: 0.5rem;
+}
+
+.section-desc {
+    font-size: 1.125rem;
+    color: #8b949e;
+    margin-bottom: 2rem;
+}
+
+/* === Skills Styles === */
+#skills {
+  background-color: #0d1117;
+  padding: 5rem 4.5rem;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+#skills ul li {
+  background-color: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 130px;
+  text-align: center;
+  transition:
+    transform 0.3s,
+    border-color 0.3s;
+}
+
+#skills ul li:hover {
+  border-color: #3a7ce0;
+  transform: translateY(-4px);
+}
+
+#skills ul li img {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 0.75rem;
+  display: block;
+}
+
+#skills ul li p {
+  font-size: 0.85rem;
+  color: #8b949e;
+  font-weight: 500;
+}
