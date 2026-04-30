@@ -17,8 +17,8 @@
       <!-- Navigation -->
       <nav>
         <a href="#about" class="aktif">About</a>
-        <a href="#skill">Skills</a>
-        <a href="#project">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#education">Education</a>
         <a href="#work">Work Experience</a>
         <a href="#contact">Contact</a>
@@ -30,16 +30,40 @@
       <!-- About Section -->
       <section id="about">
         <div class="hero-kiri">
-          <p class="greeting">Hellow! I'm</p>
-          <h2>Dhea Cynara Endita</h2>
+          <h2>Hellow! I'm <span>Dhea Cynara Endita</span></h2>
           <p class="role">Web Developer & UI/UX Designer</p>
           <p class="desc">
-            I'm a student of University Internasional Semen Indonesia at Gresik,
-            East Java. Let's get to know me!
+            I'm a student of Universitas Internasional Semen Indonesia at
+            Gresik, East Java. Let's get to know me!
           </p>
 
-          <div class="hero-tombol">
-            <button class="btn-abt">Get to Know Me!</button>
+          <div class="hero-kiri-tombol">
+            <div>
+              <button class="btn-abt">Get to Know Me!</button>
+            </div>
+
+            <ul>
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                />
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -188,21 +212,56 @@
 
       <!-- Education Section -->
       <section id="education">
-        <h2>Education</h2>
-        <div>
-          <h4>S1 Teknik Informatika</h4>
-          <p>Universitas Indonesia</p>
-          <p>2020 - 2024</p>
+        <span class="section-label">Education</span>
+        <h2>My Education</h2>
+        <p class="section-desc">
+          A selection of recent work I've been involved in.
+        </p>
+
+        <div class="edu-grid">
+          <div class="edu-img">
+            <a href="https://man1medan.sch.id/" target="_blank">
+              <img src="assets/man.png" alt="high school" />
+            </a>
+            <h3>MAN 1 Medan</h3>
+          </div>
+
+          <div class="edu-img">
+            <a href="https://uisi.ac.id/" target="_blank">
+              <img src="assets/uisi.png" alt="college" />
+            </a>
+            <h3>Universitas Internasional Semen Indonesia</h3>
+          </div>
         </div>
       </section>
 
       <!-- Work Experience Section -->
       <section id="work">
-        <h2>Work Experience</h2>
-        <div>
-          <h4>Frontend Developer</h4>
-          <p>PT. XYZ</p>
-          <p>2022 - 2023</p>
+        <span class="section-label">Work Experience</span>
+        <h2>My Work Experience</h2>
+        <p class="section-desc">
+          A selection of recent work I've been involved in.
+        </p>
+
+        <div class="work-hero">
+          <div class="left-hero">
+            <img src="assets/atlassian.png" alt="atlassian" />
+          </div>
+
+          <div class="right-hero">
+            <h2>Web Developer at Atlassian Corporation</h2>
+            <p class="desc">
+              I've been a Web Developer at
+              <span>Atlassian Corporation</span> for 3 years. I usually work as
+              a <span>Frontend</span> at the company.
+            </p>
+            <a
+              href="https://www.atlassian.com/"
+              target="_blank"
+              class="btn-work"
+              >See Company</a
+            >
+          </div>
         </div>
       </section>
 
@@ -246,32 +305,40 @@
               <form action="">
                 <div>
                   <label for="name">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                  />
+                  <div class="input-wrapper">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your name"
+                    />
+                  </div>
                 </div>
+
                 <div>
                   <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                  />
+                  <div class="input-wrapper">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email"
+                    />
+                  </div>
                 </div>
+
                 <div>
                   <label for="message">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    placeholder="Enter your message"
-                  ></textarea>
+                  <div class="input-wrapper">
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Enter your message"
+                    ></textarea>
+                  </div>
+                  <button type="submit">Send Message</button>
                 </div>
-                <button type="submit">Send Message</button>
               </form>
             </div>
           </div>
@@ -281,7 +348,28 @@
 
     <!-- Footer -->
     <footer>
-      <p>&copy; Make with heart</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Dhea Cynara Endita<span class="accent">.</span></h3>
+          <p>Web Developer and UI/UX Designer from Indonesia.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about-me">About</a>
+          <a href="#project">Projects</a>
+          <a href="#skill">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dhea Cynara Endita. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
